@@ -7,8 +7,6 @@
 // Execute `rustlings hint as_ref_mut` or use the `hint` watch subcommand for a
 // hint.
 
-// I AM NOT DONE
-
 // Obtain the number of bytes (not characters) in the given argument.
 // TODO: Add the AsRef trait appropriately as a trait bound.
 fn byte_counter<T>(arg: T) -> usize {
@@ -23,9 +21,9 @@ fn char_counter<T>(arg: T) -> usize {
 
 // Squares a number using as_mut().
 // TODO: Add the appropriate trait bound.
-fn num_sq<T>(arg: &mut T) {
+fn num_sq<T: AsMut<u32>>(arg: &mut T) {
     // TODO: Implement the function body.
-    ???
+    *arg.as_mut() *= *arg.as_mut()
 }
 
 #[cfg(test)]
