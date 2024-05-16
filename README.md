@@ -1,4 +1,4 @@
-# 🦀 Rustlings Solutions
+# [Rustlings](https://github.com/rust-lang/rustlings) Solutions
 
 | Exercise        | Book Chapter |
 | --------------- | ------------ |
